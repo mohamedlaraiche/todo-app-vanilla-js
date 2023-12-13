@@ -5,6 +5,12 @@
   font-family: 'Montserrat', sans-serif;
   height: auto;
 }
+
+#box {
+  background-color: #020c18;
+  color: #ececec;
+  min-height: 100vh;
+}
 a {
   text-decoration: none;
 }
@@ -76,8 +82,8 @@ section form .form-grp input:focus,
 }
 section form .form-grp button {
   padding: 11.5px 40px;
-  background-color: black;
-  color: #fff;
+  background-color: rgb(206, 80, 80);
+  color: #ececec;
 }
 section button:hover {
   opacity: 0.8;
@@ -93,6 +99,8 @@ section .todosHolder {
 }
 
 section .todosHolder .todo {
+  background-color: #ececec;
+  color: #020c18;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,26 +118,19 @@ section .todosHolder .todo {
     0 13.646761411524492px 13.646761411524492px -3.125px #0000001b,
     0 30px 30px -3.75px #0000000d;
 }
-a {
-  text-decoration: none;
-  color: #fff;
-}
-a:visited {
-  color: #fff;
-}
+
 section .todosHolder div .mngBtns {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-i {
-  color: #fff;
-}
+
 .mngBtns .deleteBtn {
-  background-color: red;
-  color: #fff;
+  background-color: #dd2525;
+  color: #ececec;
 }
 .mngBtns .updateBtn {
+  color: #ececec;
   background-color: rgb(0, 167, 0);
 }
 
@@ -158,7 +159,20 @@ i {
     margin: 1rem 0;
   }
 }
-
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+.cr {
+  color: #fff;
+  font-weight: 800;
+  color: #dd2525;
+}
+.cr:visited {
+  color: #dd2525;
+}
 /* JS classes */
 
 .hide {
