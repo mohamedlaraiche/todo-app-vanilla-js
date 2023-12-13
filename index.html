@@ -18,16 +18,17 @@
         <p>This is a TODO CRUD application built using vanilla Javascript</p>
       </header>
       <section>
-        <form class="">
+        <form class="formInput">
           <div class="form-grp">
-            <input type="text" name="todo" id="todo" placeholder="Create your todo" />
-            <button><i class="fa-solid fa-plus"></i> Create </button>
+            <input type="text" name="todo" id="todo"  class='createInput' placeholder="Create your todo" />
+            <button class='createBtn'><i class="fa-solid fa-plus"></i> Create </button>
           </div>
         </form>
         <div class="todosHolder">
+          <p>Please create a todo first</p>
           <div class="todo">
             <p class='todoText show ' >todo</p> 
-            <input type="text" class="editInput hide" placeholder='Edit'>
+            <input type="text" class="editInput show" placeholder='Edit'>
             <div class="mngBtns">
               <button class="updateBtn">
                 <i class="fa-solid fa-pen-to-square"></i> Update

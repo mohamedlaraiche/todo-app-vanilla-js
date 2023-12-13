@@ -1,3 +1,9 @@
+:root {
+  --mainColor: #ededed;
+  --red: #da0037;
+  --dark: #171717;
+  --gray: #444444;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +13,8 @@
 }
 
 #box {
-  background-color: #020c18;
-  color: #ececec;
+  background-color: var(--mainColor);
+  color: var(--dark);
   min-height: 100vh;
 }
 a {
@@ -78,12 +84,12 @@ section form .form-grp input,
 }
 section form .form-grp input:focus,
 .editInput:focus {
-  border: 1px solid gray;
+  border: 1px solid var(--gray);
 }
 section form .form-grp button {
-  padding: 11.5px 40px;
-  background-color: rgb(206, 80, 80);
-  color: #ececec;
+  padding: 10px 40px;
+  background-color: var(--gray);
+  color: var(--mainColor);
 }
 section button:hover {
   opacity: 0.8;
@@ -99,7 +105,7 @@ section .todosHolder {
 }
 
 section .todosHolder .todo {
-  background-color: #ececec;
+  background-color: var(--mainColor);
   color: #020c18;
   display: flex;
   align-items: center;
@@ -126,11 +132,11 @@ section .todosHolder div .mngBtns {
 }
 
 .mngBtns .deleteBtn {
-  background-color: #dd2525;
-  color: #ececec;
+  background-color: var(--red);
+  color: var(--mainColor);
 }
 .mngBtns .updateBtn {
-  color: #ececec;
+  color: var(--mainColor);
   background-color: rgb(0, 167, 0);
 }
 
@@ -168,10 +174,10 @@ footer {
 .cr {
   color: #fff;
   font-weight: 800;
-  color: #dd2525;
+  color: var(--red);
 }
 .cr:visited {
-  color: #dd2525;
+  color: var(--red);
 }
 /* JS classes */
 
