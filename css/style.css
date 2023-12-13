@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+button {
+  padding: 10px 25px;
+  font-weight: 666;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header h1,
+header p {
+  height: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  padding: 0 1rem;
+  min-height: 15vh;
+}
+header p {
+  min-height: 5vh;
+  padding: 0 2rem;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section form {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+section form .form-grp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+section form .form-grp input,
+.editInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 40%;
+  outline: none;
+  border: 1px solid #0000001b;
+}
+section form .form-grp input:focus,
+.editInput:focus {
+  border: 1px solid gray;
+}
+section form .form-grp button {
+  padding: 11.5px 40px;
+  background-color: black;
+  color: #fff;
+}
+section button:hover {
+  opacity: 0.8;
+}
+section .todosHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+  height: auto;
+  width: 80%;
+}
+
+section .todosHolder .todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 100%;
+  min-height: 10vh;
+  height: auto;
+  border: 2px solid #20202026;
+  border-radius: 6px;
+  margin: 2rem;
+  box-shadow: 0 0.7065919983928324px 0.7065919983928324px -0.625px #00000026,
+    0 1.8065619053231785px 1.8065619053231785px -1.25px #00000025,
+    0 3.6217592146567767px 3.6217592146567767px -1.875px #00000023,
+    0 6.8655999097303715px 6.8655999097303715px -2.5px #00000020,
+    0 13.646761411524492px 13.646761411524492px -3.125px #0000001b,
+    0 30px 30px -3.75px #0000000d;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:visited {
+  color: #fff;
+}
+section .todosHolder div .mngBtns {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+i {
+  color: #fff;
+}
+.mngBtns .deleteBtn {
+  background-color: red;
+  color: #fff;
+}
+.mngBtns .updateBtn {
+  background-color: rgb(0, 167, 0);
+}
+
+@media (max-width: 514px) {
+  section .todosHolder .todo {
+    flex-direction: column;
+    height: auto;
+  }
+
+  section .todosHolder .todo p {
+    margin: 1rem;
+  }
+  header p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 380px) {
+  button {
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 311px) {
+  section form .form-grp {
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+/* JS classes */
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
