@@ -81,14 +81,14 @@ const displayTodo = (todo) => {
 const createTodo = (e) => {
   e.preventDefault();
   if (!createInput.value) {
-    console.log('please fill the field');
+    alert('please fill the field');
   } else {
     const newTodo = { id: Date.now(), text: createInput.value };
     const todos = getTodosFromLocalStorage();
     todos.push(newTodo);
     saveTodosToLocalStorage(todos);
     displayTodo(newTodo);
-    createInput.value = ''; // Clear the input after adding
+    createInput.value = '';
   }
 };
 
@@ -121,7 +121,6 @@ const toggleEdit = (id) => {
 const saveUpdatedTodo = (id) => {
   const todoElement = document.getElementById('todo-' + id);
   const input = todoElement.querySelector('.editInput');
-
   updateTodoInLocalStorage(id, input.value);
   toggleEdit(id);
 
@@ -129,7 +128,7 @@ const saveUpdatedTodo = (id) => {
   paragraph.textContent = input.value;
 };
 
-// Load existing todos on page load
+// Load Local storage Data
 document.addEventListener('DOMContentLoaded', () => {
   const todos = getTodosFromLocalStorage();
   todos.forEach((todo) => displayTodo(todo));
